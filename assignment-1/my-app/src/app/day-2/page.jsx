@@ -31,6 +31,12 @@ export default function day2(){
         <Link href={"/day-2/ThemeSwitcher"}>
         <button>Ques-9</button>
         </Link>
+        <Link href={"/day-2/LanguageSwitcher"}>
+        <button>Ques-10</button>
+        </Link>
+        <Link href={"/day-2/ThemeSwitcher"}>
+        <button>Ques-11</button>
+        </Link>
         </div>
     );
 }
