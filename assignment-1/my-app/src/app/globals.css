@@ -116,6 +116,23 @@ h1{
 
 }
 
+
+/* Day-2 */
+/*PersonForm*/
+
+#form-wrapper
+{
+  border: solid 2px black;
+  border-radius: 20px;
+  width: 450px;
+  height: 300px;
+  margin: auto;
+
+}
+
+
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
