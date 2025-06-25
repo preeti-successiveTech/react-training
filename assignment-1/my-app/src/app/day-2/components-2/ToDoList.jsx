@@ -8,24 +8,52 @@
 import { useState } from "react";
 
 export default function ToDoList() {
-  let list =[]; 
-    let [todos, setTodos] = useState("");
-    function add(){
-       list.push(todos);
-        console.log(list);
-    }
-  return <>
-  <label>Enter the item</label>
-  <input type="text" placeholder="Enter the item" onChange={(e)=>setTodos(e.target.value)}></input>
+    const [todos, setTodos] = useState([
+     {name : 'hii', completed : false},
+      { name : 'gym', completed : false},
+       {name : 'study', completed : false},
+        { name : 'notes', completed : false},
+    ]);
+    const [inputValue, setInputValue] = useState('');
+
+    function deleteItem(indexToDelete){
+      console.log(indexToDelete)
+     const updateTodos = todos.filter((_, index)=> index!== indexToDelete );
+     setTodos(updateTodos);
+       
+    };
+    function add()
+    {
+      if(inputValue.trim()!=='')
+      {
+        const newTodo = {
+          name: inputValue,
+          completed : false
+        }
+        setTodos([...todos, newTodo]);
+        setInputValue('');
+      }
+    };
+  return( <>
+  <div id="toDoList">
+  <input type="text" placeholder="Enter the item" onChange={(e)=>setInputValue(e.target.value)}></input>
   <button onClick={add}>Add</button>
     <div>
       <ul> 
-        {list.map((value,index)=>{
-          <li key = {index}>{value}</li>
-        })}
+        {todos.map((value,index)=>
+          <li key = {index}>
+            <div id="list">
+           <p>{value.name}</p>
+          
+            <button onClick={()=>deleteItem(index)}>X</button>
+            <button type="checkbox">checkbox</button>
+            </div>
+            </li>
+        )}
        
       
       </ul>
     </div>
-  </>
+    </div>
+  </>);
 }

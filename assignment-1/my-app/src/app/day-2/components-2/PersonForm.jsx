@@ -16,22 +16,26 @@ export default function PersonForm() {
     <>
       <div id="form-wrapper">
         <form action={""}>
-          <label >First Name:</label>
+          <div id='content-1'>
+          <label ><b>First Name:</b></label>
           <input
             type="text"
             placeholder="Enter the First Name"
             onChange={(e) => setFirstName(e.target.value)}
-          />
+          /></div>
           <br />
-          <label>Last Name:</label>
+          <div id='content-1'>
+          <label><b>Last Name:</b></label>
           <input
             type="text"
             placeholder="Enter the Last Name"
             onChange={(e) => setlastName(e.target.value)}
           />
+          </div>
           <br />
-          <label>Age:</label>
-         <div><input
+          <div id='content-1'>
+          <label><b>Age:</b></label>
+         <input
             type="text"
             placeholder="Enter your age"
             onChange={(e) => setAge(e.target.value)}

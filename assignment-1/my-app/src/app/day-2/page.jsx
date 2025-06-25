@@ -34,8 +34,32 @@ export default function day2(){
         <Link href={"/day-2/LanguageSwitcher"}>
         <button>Ques-10</button>
         </Link>
-        <Link href={"/day-2/ThemeSwitcher"}>
+        <Link href={"/day-2/ShoppingCart"}>
         <button>Ques-11</button>
+        </Link>
+         <Link href={"/day-2/VotingApp"}>
+        <button>Ques-12</button>
+        </Link>
+         <Link href={"/day-2/ParentChild"}>
+        <button>Ques-13</button>
+        </Link>
+        <Link href={"/day-2/TaskList"}>
+        <button>Ques-14</button>
+        </Link>
+        <Link href={"/day-2/StudentList"}>
+        <button>Ques-15</button>
+        </Link>
+         <Link href={"/day-2/EmployeeSalaries"}>
+        <button>Ques-16</button>
+        </Link>
+        <Link href={"/day-2/UseClipBoard"}>
+        <button>Ques-17</button>
+        </Link>
+        <Link href={"/day-2/LocalStorage"}>
+        <button>Ques-18</button>
+        </Link>
+        <Link href={"/day-2/LocalStorage"}>
+        <button>Ques-19</button>
         </Link>
         </div>
     );
