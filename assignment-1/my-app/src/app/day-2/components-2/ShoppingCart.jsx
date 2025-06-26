@@ -10,9 +10,29 @@
 import { useContext, useState } from "react"
 import { ShoppingContext } from "../context/ShoppingCartContext"
 
+const Cart = () => {
+  const { cartItem, removeFromCart, totalPrice } = useContext(ShoppingContext);
 
+  return (
+    <div>
+      <h3>Shopping Cart</h3>
+      {cartItem.length === 0 && <p>The cart is empty.</p>}
+      {cartItem.map(item => (
+        <div key={item.id} style={{ marginBottom: '10px' }}>
+          <span>{item.name} (x{item.quantity}) - Rs{ (item.price * item.quantity).toFixed(2) }</span>
+          <button 
+            onClick={() => removeFromCart(item.id)} 
+            style={{ marginLeft: '10px' }}>
+            Remove
+          </button>
+        </div>
+      ))}
+      <h4>Total: Rs{totalPrice.toFixed(2)}</h4>
+    </div>
+  );
+};
 export default function ShoppingCart() {
-    const {cartItem,AddToCart, removeFromCart} = useContext(ShoppingContext);
+    const {AddToCart} = useContext(ShoppingContext);
     const item =[
         {id: 1,img : "https://exclusivelane.com/cdn/shop/products/EL-002-140_A.jpg?v=1581072566", price:2000},
         {id:2,img:"https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/25911010/2023/12/21/c9139c15-ca43-48ce-8ddb-84968d2545981703152023940-ArtVibes-Green--Blue-Warli-Art-Wooden-Wall-Hanging-684170315-1.jpg",price: 3000},
@@ -28,6 +48,7 @@ export default function ShoppingCart() {
                 </div>
             
             )};
+            <Cart/>
         
     </div>)
 }

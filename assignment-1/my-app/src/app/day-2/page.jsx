@@ -58,7 +58,7 @@ export default function day2(){
         <Link href={"/day-2/LocalStorage"}>
         <button>Ques-18</button>
         </Link>
-        <Link href={"/day-2/LocalStorage"}>
+        <Link href={"/day-2/useTimer"}>
         <button>Ques-19</button>
         </Link>
         </div>
