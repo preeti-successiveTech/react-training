@@ -1,4 +1,4 @@
-import UserCard from "@/app/day-1/components/UserCard";
+import UserCard from "@/components/components/UserCard";
 export default function ShowUserCard(){
       const users = [
     {

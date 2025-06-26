@@ -1,4 +1,4 @@
-import Counter from '@/app/day-1/components/Counter'
+import Counter from '@/components/components/Counter'
 export default function showGreeting(){
     return(<>
         <div>

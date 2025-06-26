@@ -1,4 +1,4 @@
-import Button from '@/app/day-1/components/Button'
+import Button from '@/components/components/Button'
 export default function showGreeting(){
     return(<>
        <div >

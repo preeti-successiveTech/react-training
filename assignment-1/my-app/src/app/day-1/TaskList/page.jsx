@@ -1,4 +1,4 @@
-import TaskList from '@/app/day-1/components/TaskList'
+import TaskList from '@/components/components/TaskList'
 export default function showGreeting(){
     const list = ["gym", "ppt", "assignment"];
     return(<>

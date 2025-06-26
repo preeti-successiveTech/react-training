@@ -1,4 +1,4 @@
-import Weather from '@/app/day-1/components/Weather'
+import Weather from '@/components/components/Weather'
 export default function showGreeting(){
     return(<>
         <div>

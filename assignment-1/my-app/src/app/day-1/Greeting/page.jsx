@@ -1,4 +1,4 @@
-import Greeting from '@/app/day-1/components/Greeting'
+import Greeting from '@/components/components/Greeting'
 export default function showGreeting(){
     return(<>
         <div>
