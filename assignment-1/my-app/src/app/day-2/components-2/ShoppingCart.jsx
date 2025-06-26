@@ -19,9 +19,9 @@ const Cart = () => {
       {cartItem.length === 0 && <p>The cart is empty.</p>}
       {cartItem.map(item => (
         <div key={item.id} style={{ marginBottom: '10px' }}>
-          <span>{item.name} (x{item.quantity}) - Rs{ (item.price * item.quantity).toFixed(2) }</span>
+          <span><img src={item.img}/> (x{item.quantity}) - Rs{ (item.price * item.quantity).toFixed(2) }</span>
           <button 
-            onClick={() => removeFromCart(item.id)} 
+            onClick={() => removeFromCart(item)} 
             style={{ marginLeft: '10px' }}>
             Remove
           </button>
