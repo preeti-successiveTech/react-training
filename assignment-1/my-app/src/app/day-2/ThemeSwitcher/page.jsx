@@ -1,6 +1,6 @@
 
 "use client"
-import ThemeSwitcher from "@/app/day-2/components-2/ThemeSwitcher"
+import ThemeSwitcher from "@/components/components-2/ThemeSwitcher"
 export default function showTheme()
 {
     

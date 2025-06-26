@@ -1,6 +1,6 @@
 "use client";
 
-import useLocalStorage from "../hook/useLocalStorage";
+import useLocalStorage from "../../app/day-2/hook/useLocalStorage";
 
 export default function LocalStorage() {
   const [name, setName] = useLocalStorage("username", "");

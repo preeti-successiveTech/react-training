@@ -8,7 +8,7 @@
 
 
 import { useContext, useState } from "react"
-import { ShoppingContext } from "../context/ShoppingCartContext"
+import { ShoppingContext } from "../../context/context/ShoppingCartContext"
 
 const Cart = () => {
   const { cartItem, removeFromCart, totalPrice } = useContext(ShoppingContext);

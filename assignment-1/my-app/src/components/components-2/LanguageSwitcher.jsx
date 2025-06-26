@@ -6,7 +6,7 @@
 // Display different language versions of the application's content.
 
 import { useContext } from "react";
-import { LanguageContext, switchLanguage,toggle } from "../context/LanguageContext";
+import { LanguageContext, switchLanguage,toggle } from "../../context/context/LanguageContext";
 
 export default function LanguageSwitcher(){
     const {language,toggle} = useContext(LanguageContext);

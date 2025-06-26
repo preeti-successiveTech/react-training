@@ -1,7 +1,7 @@
 "use client";
 
-import LanguageSwitcher from "@/app/day-2/components-2/LanguageSwitcher";
-import { ShowSwitcher } from "../context/LanguageContext";
+import LanguageSwitcher from "@/components/components-2/LanguageSwitcher";
+import { ShowSwitcher } from "../../../context/context/LanguageContext";
 
 export default function showLanguageSwitcher() {
   return (

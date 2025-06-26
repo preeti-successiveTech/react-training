@@ -1,6 +1,6 @@
 "use client";
 
-import useTimer from "../hook/useTimer";
+import useTimer from "../../app/day-2/hook/useTimer";
 
 export default function Timer() {
   const { time, start, pause, reset } = useTimer(60);

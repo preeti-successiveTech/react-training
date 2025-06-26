@@ -1,4 +1,4 @@
-import Notification1 from "@/app/day-2/components-2/Notification1";
+import Notification1 from "@/components/components-2/Notification1";
 
 export default function showNotification(){
     return(

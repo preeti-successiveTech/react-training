@@ -1,5 +1,5 @@
 "use client"
-import Parent from "@/app/day-2/components-2/Parent";
+import Parent from "@/components/components-2/Parent";
 
 export default function ShowParentChild()
 {

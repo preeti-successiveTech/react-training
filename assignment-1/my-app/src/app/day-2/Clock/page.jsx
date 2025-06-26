@@ -1,5 +1,5 @@
 "use client"
-import Clock from '@/app/day-2/components-2/Clock'
+import Clock from '@/components/components-2/Clock'
 export default function showClock()
 {
     return(<>

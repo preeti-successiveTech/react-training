@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import Child from "@/app/day-2/components-2/Child";
+import Child from "@/components/components-2/Child";
 
 export default function Parent() {
     const [count, setCount] = useState(0);

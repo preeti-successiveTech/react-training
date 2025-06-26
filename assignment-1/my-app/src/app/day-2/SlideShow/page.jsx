@@ -1,5 +1,5 @@
 "use client"
-import SlideShows from "@/app/day-2/components-2/SlideShow"
+import SlideShows from "@/components/components-2/SlideShow"
 export default function showSlideShow()
 {
     return (<>

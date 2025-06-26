@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import useClipboard from "../hook/useClipboard";
+import useClipboard from "../../app/day-2/hook/useClipboard";
 
 export default function ClipBoardBox() {
   const [text, setText] = useState("");
