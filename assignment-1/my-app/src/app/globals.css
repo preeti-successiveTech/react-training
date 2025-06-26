@@ -52,10 +52,13 @@ h1{
 #page button{
   width: 100px;
   height: 100px;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 10px;
-  background-color: black;
+  margin-bottom: 30px;
+  background-color: rgb(71, 124, 224);
   color: white;
+  border-radius: 20px;
+  border-width: 10px;
 }
 #page button:hover{
   background-color:white;
@@ -114,6 +117,129 @@ h1{
 #button{
   margin-right: 20px;
 
+}
+
+
+/* Day-2 */
+/*PersonForm*/
+
+#form-wrapper
+{
+  border: solid 2px black;
+  border-radius: 20px;
+  width: 450px;
+  height: 300px;
+   display: flex;
+    margin: auto;
+}
+
+#content-1{
+  margin: 20px 20px 20px 20px;
+}
+
+
+/* todolist*/
+
+#toDoList {
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+#toDoList input[type="text"] {
+  width: 65%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#toDoList button {
+  padding: 8px 12px;
+  margin-left: 10px;
+  font-size: 14px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#toDoList button:hover {
+  background-color: #125ea5;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+#list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+#list p {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+#list button {
+  margin-left: 8px;
+  background-color: #f4f2f2;
+  color: black;
+}
+#list button:hover{
+  background-color: #e53935;
+  color: white;
+}
+#list button:nth-child(3) {
+  background-color: #43a047;
+}
+
+#list button:hover:nth-child(3) {
+  background-color: #2e7d32;
+}
+
+/*shoppingCart*/
+#slide{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+
+}
+#slide-img{
+  border: solid 2px black;
+  border-radius: 20px;
+  margin: 20px;
+  justify-content: center;
+}
+#slide img{
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+}
+#slide button{
+  width: 120px;
+  height: fit-content;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
