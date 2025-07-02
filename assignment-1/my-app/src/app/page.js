@@ -19,6 +19,9 @@ export default function Home() {
     <Link href={'/day-4'}>
         <button>day-4</button>
     </Link>
+  <Link href={'/day-5'}>
+        <button>day-5</button>
+    </Link>
   
  </div>);
 }
