@@ -1,6 +1,6 @@
 // import Image from "next/image";
 // import styles from "./page.module.css";
-
+"use client";
 import Link from "next/link";
 
 export default function Home() {
@@ -26,6 +26,13 @@ export default function Home() {
       <Link href={"/day-6"}>
         <button>day-6</button>
       </Link>
+      <Link href={"/assesment"}>
+        <button>assesment</button>
+      </Link>
+      <Link href={"/test1"}>
+        <button>test</button>
+      </Link>
+      
     </div>
   );
 }
